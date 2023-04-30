@@ -1,33 +1,16 @@
+import { useSelector } from 'react-redux'
 import Card from '../../components/Card'
 import { Container } from './styles'
+import { RootReducer } from '../../store'
 
 const ContactList = () => {
+  const { itens } = useSelector((state: RootReducer) => state.contacts)
+
   return (
     <Container>
-      <Card
-        name="Elisberto Alves"
-        email="elisberto@gmail.com"
-        tel="6299253-3318"
-        id={1}
-      />
-      <Card
-        name="Elisberto Alves"
-        email="elisberto@gmail.com"
-        tel="6299253-3318"
-        id={1}
-      />
-      <Card
-        name="Elisberto Alves"
-        email="elisberto@gmail.com"
-        tel="6299253-3318"
-        id={3}
-      />
-      <Card
-        name="Elisberto Alves"
-        email="elisberto@gmail.com"
-        tel="6299253-3318"
-        id={4}
-      />
+      {itens.map(({ name, email, tel, id }) => (
+        <Card key={id} name={name} email={email} tel={tel} id={id} />
+      ))}
     </Container>
   )
 }

@@ -4,7 +4,7 @@ import ContactClass from '../../models/Contact'
 
 type Props = ContactClass
 
-const Card = ({ name, email, tel }: Props) => {
+const Card = ({ name, email, tel, id }: Props) => {
   const [isEditing, setIsEditing] = useState(false)
 
   return (
