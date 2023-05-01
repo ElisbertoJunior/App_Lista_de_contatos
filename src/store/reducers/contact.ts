@@ -20,22 +20,22 @@ const initialState: ContactState = {
       2
     ),
     new Contact(
-      'Juliana Pereira',
-      'juliana.pereira@gmail.com',
+      'Alane Pereira',
+      'alane.pereira@gmail.com',
       '(62) 95553-8328',
       3
     ),
     new Contact(
-      'Elisaudo Silva Prado',
-      'elisaudo.prado@gmail.com',
+      'Matias Silva Prado',
+      'matias.prado@gmail.com',
       '(62) 93233-3518',
-      1
+      4
     ),
     new Contact(
       'Pedro Martins Motta',
       'pedro.motta@gmail.com',
       '(62) 99657-5310',
-      1
+      5
     )
   ]
 }
@@ -44,8 +44,8 @@ const contactSlice = createSlice({
   name: 'contacts',
   initialState,
   reducers: {
-    remove: (state, action: PayloadAction<Contact>) => {
-      state.itens = [...state.itens.filter((c) => c.id !== action.payload.id)]
+    remove: (state, action: PayloadAction<number>) => {
+      state.itens = [...state.itens.filter((c) => c.id !== action.payload)]
     },
     edit: (state, action: PayloadAction<Contact>) => {
       const contactIndex = state.itens.findIndex(

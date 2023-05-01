@@ -22,8 +22,8 @@ export const TitleCard = styled.h3`
 export const Email = styled.input`
   width: 100%;
   font-size: 16px;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 10px 0;
+  border: none;
   border-radius: 8px;
 
   color: #fff;

@@ -7,5 +7,5 @@ export const Container = styled.div`
 
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
 `
