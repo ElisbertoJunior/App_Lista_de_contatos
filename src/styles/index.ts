@@ -17,7 +17,7 @@ const GlobalStyle = createGlobalStyle`
 `
 export const Button = styled.button`
   background-color: #00d8ff;
-  color: #000;
+  color: #fff;
   font-weight: bold;
   padding: 8px;
   border-radius: 10px;
