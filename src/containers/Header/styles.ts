@@ -6,6 +6,10 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
 
   div {
     display: flex;

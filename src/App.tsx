@@ -1,15 +1,28 @@
 import { Provider } from 'react-redux'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ContactList from './containers/ConatctList'
 import Header from './containers/Header'
 import GlobalStyle from './styles'
 import store from './store'
+import Home from './pages/Home'
+import Register from './pages/Register'
 
 const App = () => {
+  const routes = createBrowserRouter([
+    {
+      path: '/',
+      element: <Home />
+    },
+    {
+      path: '/register',
+      element: <Register />
+    }
+  ])
+
   return (
     <Provider store={store}>
       <GlobalStyle />
-      <Header />
-      <ContactList />
+      <RouterProvider router={routes} />
     </Provider>
   )
 }

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Button } from '../../styles'
 
 export const CardContainer = styled.div`
   height: 100%;
@@ -29,20 +30,7 @@ export const Email = styled.input`
   color: #fff;
   background-color: transparent;
 `
-export const Button = styled.button`
-  background-color: #00d8ff;
-  color: #000;
-  font-weight: bold;
-  padding: 8px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  margin-right: 8px;
 
-  :hover {
-    opacity: 0.8;
-  }
-`
 export const RemoveButton = styled(Button)`
   background-color: #f44336;
   color: #fff;

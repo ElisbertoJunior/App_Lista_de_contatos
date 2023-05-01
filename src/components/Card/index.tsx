@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import * as S from './styles'
+import { Button } from '../../styles'
 import ContactClass from '../../models/Contact'
 import { edit, remove } from '../../store/reducers/contact'
 
@@ -68,7 +69,7 @@ const Card = ({ name, email: originalEmail, tel: originalTel, id }: Props) => {
         </>
       ) : (
         <>
-          <S.Button onClick={() => setIsEditing(true)}>Editar</S.Button>
+          <Button onClick={() => setIsEditing(true)}>Editar</Button>
           <S.RemoveButton onClick={() => dispatch(remove(id))}>
             Remover
           </S.RemoveButton>
