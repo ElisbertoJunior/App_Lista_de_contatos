@@ -1,7 +1,6 @@
 import { Provider } from 'react-redux'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import ContactList from './containers/ConatctList'
-import Header from './containers/Header'
+
 import GlobalStyle from './styles'
 import store from './store'
 import Home from './pages/Home'
