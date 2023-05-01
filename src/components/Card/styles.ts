@@ -33,11 +33,9 @@ export const Email = styled.input`
 
 export const RemoveButton = styled(Button)`
   background-color: #f44336;
-  color: #fff;
 `
 export const SaveButton = styled(Button)`
   background-color: #44bd32;
-  color: #fff;
 `
 
 export const Phone = styled(Email)``
