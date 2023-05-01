@@ -3,9 +3,9 @@ import { Button } from '../../styles'
 
 export const Form = styled.form`
   max-width: 800px;
-  width: 100%;
+  width: 90%;
   padding: 40px;
-  margin: 60px auto;
+  margin: 140px auto;
 
   border-radius: 8px;
   -webkit-box-shadow: 1px 9px 33px -11px rgba(0, 0, 0, 0.75);
